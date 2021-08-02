@@ -1,10 +1,11 @@
 def imprime_menu
     puts ''
     puts  "|-----------------------------------------|"
-    puts  "|            CALCULADORA                  |"
+    puts  "|              CALCULADORA                |"
     puts  "|-----------------------------------------|"
     puts  "|                                         |"
     puts  "|  Escolha a operação que deseja fazer:   |"
+    puts  "|                                         |"
     puts  "|   1. Somar (+)                          |"
     puts  "|   2. Diminuir (-)                       |"
     puts  "|   3. Multiplicar (x)                    |"
@@ -22,7 +23,7 @@ end
 def pergunta_deseja_continuar
     puts ''
     puts ''
-    puts  "|        Deseja continuar?                |"
+    puts  "|         Deseja continuar?               |"
     puts  "|       Pressione S para Sim              |"
     puts  "|       Pressione N para Não              |"
     opcao = gets.chomp

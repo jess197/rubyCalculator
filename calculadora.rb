@@ -23,16 +23,16 @@ elsif (1..4).include?(operacao)
     case operacao
     when 1
         #funcaosoma
-        print 'O resultado é ', somar(num_1,num_2)
+        print '         O resultado é ', somar(num_1,num_2)
     when 2
         #funcaosubtracao
-        print 'O resultado é ', diminuir(num_1,num_2)
+        print '         O resultado é ', diminuir(num_1,num_2)
     when 3 
         #funcaomulti
-        print 'O resultado é ', multiplicar(num_1,num_2)
+        print '         O resultado é ', multiplicar(num_1,num_2)
     when 4 
         #funcaodiv
-        print 'O resultado é ', dividir(num_1,num_2)
+        print '         O resultado é ', dividir(num_1,num_2)
     end
 
     pergunta_deseja_continuar
