@@ -9,16 +9,19 @@ loop do
 imprime_menu
 operacao = gets.chomp.to_i
 
-if operacao == 0 
+if operacao == 5
+    puts ''
+    puts 'Você escolheu sair. Bom te ver aqui, até mais!'
+    puts ''
     exit
 elsif (1..4).include?(operacao)
     puts ''
     puts "Digite o primeiro número e pressione enter"
     print "--> "
-    num_1 = gets.chomp.to_f
+    num_1 = gets.chomp.gsub(",",".").to_f
     puts "Digite o segundo número e pressione enter"
     print "--> "
-    num_2 = gets.chomp.to_f
+    num_2 = gets.chomp.gsub(",",".").to_f
 
     case operacao
     when 1
@@ -38,6 +41,7 @@ elsif (1..4).include?(operacao)
     pergunta_deseja_continuar
 
 else
+    puts ''
     puts 'Operação inválida, por favor escolha novamente'
 end 
 

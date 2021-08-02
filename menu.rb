@@ -10,7 +10,7 @@ def imprime_menu
     puts  "|   2. Diminuir (-)                       |"
     puts  "|   3. Multiplicar (x)                    |"
     puts  "|   4. Dividir (/)                        |"
-    puts  "|   0. Sair                               |"
+    puts  "|   5. Sair                               |"
     puts  "|                                         |"
     print "|   Operação: "
 end
