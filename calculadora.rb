@@ -1,4 +1,5 @@
-# Undefined name - Calculator
+# Banguela's Calculator
+# Jéssica, Karina, Lucas Galli e Lucas Lucatero
 require_relative "funcoes_matematicas.rb"
 require_relative "menu.rb"
 
