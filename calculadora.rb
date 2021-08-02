@@ -1,46 +1,12 @@
 # Undefined name - Calculator
+require_relative "funcoes_matematicas.rb"
+require_relative "menu.rb"
 
-#Funcao somar
-def somar(a,b)
-    a+b
-end
-
-#Funcao diminuir
-def diminuir(a,b)
-    a-b
-end
-
-#Funcao multiplicar
-def multiplicar(a,b)
-    a*b
-end
-
-#Funcao dividir
-def dividir(a,b)
-    if b != 0
-        print 'O resultado é: ', a/b
-    else
-        print 'Não é possível realizar divisão por zero. Tente novamente!'
-    end
-end
+imprime_saudacao
 
 loop do 
 # MENU
-puts ''
-puts '      Olá, seja bem vindo à Calculadora!    '
-puts ''
-puts  "|-----------------------------------------|"
-puts  "|            CALCULADORA                  |"
-puts  "|-----------------------------------------|"
-puts  "|                                         |"
-puts  "|  Escolha a operação que deseja fazer:   |"
-puts  "|   1. Somar (+)                          |"
-puts  "|   2. Diminuir (-)                       |"
-puts  "|   3. Multiplicar (x)                    |"
-puts  "|   4. Dividir (/)                        |"
-puts  "|   0. Sair                               |"
-puts  "|                                         |"
-print "|   Operação: "
+imprime_menu
 operacao = gets.chomp.to_i
 
 if operacao == 0 
@@ -66,9 +32,11 @@ elsif (1..4).include?(operacao)
         print 'O resultado é ', multiplicar(num_1,num_2)
     when 4 
         #funcaodiv
-        dividir(num_1,num_2)
+        print 'O resultado é ', dividir(num_1,num_2)
     end
-    
+
+    pergunta_deseja_continuar
+
 else
     puts 'Operação inválida, por favor escolha novamente'
 end 
